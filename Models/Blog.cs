@@ -5,9 +5,14 @@ namespace CRUD.Blog.Models
     [Table("Blog")]
     public class Blog
     {
+        public Blog()
+        {
+            Id=new Guid();
+        }
+
         [Column("Id")]
         [Display(Name="ایدی خبر")]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Column("Title")]
         [Display(Name="موضوع خبر")]

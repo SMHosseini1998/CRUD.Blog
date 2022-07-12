@@ -1,0 +1,34 @@
+@model List<CRUD.Blog.Models.Blog>
+@{
+    ViewData["Title"] = "مدیریت وبلاگ سایت";
+}
+@{
+    int row = 1;
+}
+<a href="/Blog/Create" class="btn btn-success">افزودن وبلاگ جدید</a>
+<br>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">سطر</th>
+            <th scope="col">عنوان</th>
+            <th scope="col">توضیحات</th>
+            <th scope="col">توضیحات بیشتر</th>
+            <th scope="col">عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@(row++)</th>
+                <td>@item.Title</td>
+                <td>@item.ShoetDes</td>
+                <td>@item.Des</td>
+                <td><a href="/Blog/Edit/@item.Id" class="btn btn-warning">ویرایش</a>|<a href="/Blog/Delte/@item.Id" class="btn btn-danger">حذف</a></td>
+            </tr>
+        }
+
+    </tbody>
+</table>

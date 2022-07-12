@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(optins=>
-optins.UseNpgsql(""));
+optins.UseNpgsql("Host=localhost;Port=5432;Pooling=true;Database=Blog;UserId=postgres;password=root"));
  
 var app = builder.Build();
 
