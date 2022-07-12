@@ -24,3 +24,10 @@ E:\CRUD.Blog\obj\Debug\net6.0\refint\CRUD.Blog.dll
 E:\CRUD.Blog\obj\Debug\net6.0\CRUD.Blog.pdb
 E:\CRUD.Blog\obj\Debug\net6.0\CRUD.Blog.genruntimeconfig.cache
 E:\CRUD.Blog\obj\Debug\net6.0\ref\CRUD.Blog.dll
+E:\CRUD.Blog\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\CRUD.Blog\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\CRUD.Blog\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\CRUD.Blog\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\CRUD.Blog\bin\Debug\net6.0\Npgsql.dll
+E:\CRUD.Blog\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\CRUD.Blog\obj\Debug\net6.0\CRUD.Blog.csproj.CopyComplete
