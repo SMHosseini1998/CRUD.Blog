@@ -1,8 +1,14 @@
+using CRUD.Blog.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(optins=>
+optins.UseNpgsql(""));
+ 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
